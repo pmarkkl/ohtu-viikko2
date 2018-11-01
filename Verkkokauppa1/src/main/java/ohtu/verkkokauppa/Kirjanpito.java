@@ -1,8 +1,8 @@
-
 package ohtu.verkkokauppa;
-
+import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 
+@Component
 public class Kirjanpito implements Kirjaapidettava {
     
     private ArrayList<String> tapahtumat;
@@ -19,5 +19,5 @@ public class Kirjanpito implements Kirjaapidettava {
     @Override
     public ArrayList<String> getTapahtumat() {
         return tapahtumat;
-    }       
+    }
 }
